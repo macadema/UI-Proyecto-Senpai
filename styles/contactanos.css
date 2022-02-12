@@ -1,0 +1,256 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*estilo del body*/
+body {
+    background-color: rgba(208, 222, 231, 1);
+}
+
+/*Estilo del Header*/
+header {
+    width: 100vw;
+    height: 52vh;
+    background: hsla(177, 94%, 38%, 0.699);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(../imagenes/fondoheader.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(../imagenes/fondoheader.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header nav {
+    text-align: right;
+    padding: 4vh 5vw 0 0;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 4vh;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.titulos-header {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 100vw;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 20vw;
+}
+
+.titulos-header h1 {
+    font-size: 3.75rem;
+    color: white;
+    box-shadow: 3px solid black;
+}
+
+.titulos-header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    box-shadow: 3px solid black;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+/* EStilo Body */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-evenly;
+
+}
+
+.logo img {
+    width: 20vw;
+}
+
+/*Estilo del formulario*/
+
+
+#formulario {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    width: 50vw;
+}
+
+.button {
+    size: 3.75rem;
+}
+
+body div button {
+    font-size: 1.875rem;
+    color: rgb(116, 165, 177);
+}
+
+/*Estilo del Footer*/
+
+footer {
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 5vh;
+}
+
+.footer .sofia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh 0px;
+}
+
+.footer .Copywright {
+    text-align: center;
+    padding-top: 3vh;
+    border-top: 2px solid rgb(116, 165, 177);
+}
+
+/*Media Queries para dispositivos moviles*/
+
+/* Cambiando la fuente del html para acomodar las medidas rem */
+@media (min-width:1600px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/*Media Queries para dispositivos moviles*/
+@media only screen and (min-device-width : 440px) and (max-device-width : 991px) {
+
+    /*media querie para Header*/
+
+    body header {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-content: center;
+        justify-content: space-evenly;
+
+    }
+
+    header nav {
+        text-align: center;
+        padding: 0;
+    }
+
+    header .titulos-header {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    header .titulos-header h2 {
+        padding: 0;
+        align-items: center;
+        min-width: 440px;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    /*media querie para el main - seccion formulario*/
+
+    .contenedor .logo {
+        display: none;
+    }
+
+
+
+
+
+    /*Media querie para el footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+/*Media Queries para dispositivos moviles*/
+
+@media (max-width:439px) {
+
+    /*media querie para Header*/
+
+    body header {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-content: center;
+        justify-content: space-evenly;
+
+    }
+
+    header nav {
+        text-align: center;
+        padding: 0;
+    }
+
+    header .titulos-header {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    header .titulos-header h2 {
+        display: none;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    /*media querie para el main - seccion formulario*/
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3vh 3vw;
+        overflow: hidden;
+    }
+
+    .contenedor .logo {
+        display: none;
+    }
+
+
+    /*Media querie para el footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
