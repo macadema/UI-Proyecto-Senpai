@@ -9,22 +9,88 @@ body {
 
 }
 
+/*Estilo del Header*/
+header {
+    width: 100vw;
+    height: 52vh;
+    background: hsla(177, 94%, 38%, 0.699);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(/public/assets/img/fondoheader.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(/public/assets/img/fondoheader.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header nav {
+    text-align: right;
+    padding: 4vh 5vw 0 0;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 4vh;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.titulos-header {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 100vw;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 20vw;
+}
+
+.titulos-header h1 {
+    font-size: 3.75rem;
+    color: white;
+    box-shadow: 3px solid black;
+}
+
+.titulos-header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    box-shadow: 3px solid black;
+}
+/*
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}*/
+
 
 /*Estilo del Main*/
 
-main section h2 {
+.portafolio {
+    background: #cfdee7;
+}
+
+.portafolio .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+main section .titulo {
     font-size: 3rem;
     color: black;
     font-weight: 700;
     text-align: center;
-}
+    }
 
 .portafolio .contenedor .titulo {
     margin-bottom: 5vh;
-}
-
-.portafolio {
-    background: #cfdee7;
 }
 
 .galeria-port {

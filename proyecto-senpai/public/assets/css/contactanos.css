@@ -14,15 +14,15 @@ body {
 header {
     width: 100vw;
     height: 52vh;
-    background: hsla(177, 94%, 38%, 0.699);
+    /*background: hsla(177, 94%, 38%, 0.699);
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(../imagenes/fondoheader.jpg);
+    /*background: -webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(/public/assets/img/fondoheader.jpg));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(../imagenes/fondoheader.jpg);
+    /*background: linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(/public/assets/img/fondoheader.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+    /*background-size: cover;
+    /*background-attachment: fixed;
+    /*position: relative;*/
 }
 
 header nav {

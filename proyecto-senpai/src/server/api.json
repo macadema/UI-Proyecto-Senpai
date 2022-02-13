@@ -1,0 +1,40 @@
+{
+    "portafolio": [
+        {
+            "id": "1",
+            "Proyecto": "Proyecto Blanco",
+            "ImagenFondo": "assets/img/proyectos2.jpg",
+            "ImagenHover": "assets/img/LOGO Sophie sin fondo.png"
+
+        },
+        {
+            "id": "2",
+            "Proyecto": "Proyecto Azul"
+        },
+        {
+            "id": "3",
+            "Proyecto": "Proyecto Rojo"
+        },
+        {
+            "id": "4",
+            "Proyecto": "Proyecto Amarillo"
+        },
+        {
+            "id": "5",
+            "Proyecto": "Proyecto Verde"
+        },
+        {
+            "id": "6",
+            "Proyecto": "Proyecto Naranja"
+        },
+        {
+            "id": "7",
+            "Proyecto": "Proyecto Gris"
+        },
+        {
+            "id": "8",
+            "Proyecto": "Proyecto Negro"
+        }
+    
+    ]
+}
