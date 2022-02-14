@@ -1,26 +1,29 @@
+import { Articulo } from "../common/articulo";
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 export function QuienesSomos(){
+    const [articulos, setArticulos] = useState([]);
+
+    //Traigo info de api.json
+    useEffect(()=>{
+        axios.get("http://localhost:3000/Articulos").then((response) => {
+            setArticulos(response.data);
+    });
+
+}, []);
     
     return (
     <>
         <article className="articulo">
             <div className="articulo contenido">
-                <h2 className="articulo contenido h2">Acerca de...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus nostrum soluta. Autem
-                    voluptatem amet architecto odio quaerat nisi cumque vero exercitationem soluta dolorem dolorum eaque,
-                    magni hic. Nam, sint! Odit ipsa, voluptatum labore, placeat quam, doloremque amet accusantium esse
-                    soluta veniam ab recusandae repellat modi incidunt aperiam facilis ea blanditiis dolor totam dicta?
-                    Voluptas asperiores ad aperiam, iusto enim error ratione, fugiat eos culpa, blanditiis officia!
-                    Officiis, molestias culpa?</p>
-            </div>
-
-            <div className="articulo contenido">
-                <h2 className="articulo contenido h2">Mision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim esse illo inventore veniam,
-                    voluptas porro ea aut suscipit velit facilis eligendi molestias sit, aliquid saepe nihil minima,
-                    accusantium dignissimos laborum? Possimus iusto dolor deserunt, excepturi delectus eligendi molestiae
-                    necessitatibus iste quae blanditiis optio culpa dolore ipsa labore libero, quam non rerum aliquam sequi
-                    explicabo, accusantium beatae consequatur dignissimos qui! Unde voluptatibus praesentium eligendi ullam
-                    tenetur ut rem aliquam earum! </p>
+                {articulos.map(function (articulo) {
+                    return (
+                        
+                    <Articulo key={articulo.id} />
+                        
+                    );
+                })}
             </div>
 
             <div className="articulo contenido">

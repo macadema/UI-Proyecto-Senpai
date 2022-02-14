@@ -1,3 +1,6 @@
+
+//COMPONENTE TODAVIA NO USADO. ES PARA REDUCIR LOS DIVS REPETIDOS EN HOMEPAGE.JSX
+
 export function Proyecto(props){
     return (
         <>
