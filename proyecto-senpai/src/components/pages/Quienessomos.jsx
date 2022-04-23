@@ -1,4 +1,4 @@
-import { Articulo } from "../common/articulo";
+import { Articulo } from "../common/Articulo";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
