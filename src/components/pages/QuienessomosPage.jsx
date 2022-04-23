@@ -1,8 +1,9 @@
-import { Articulo } from "../common/articulo";
+import { Articulo } from "../common/Articulo";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export function QuienesSomos(){
+export function QuienessomosPage(){
+
     const [articulos, setArticulos] = useState([]);
 
     //Traigo info de api.json
@@ -19,8 +20,8 @@ export function QuienesSomos(){
             <div className="articulo contenido">
                 {articulos.map(function (articulo) {
                     return (
-                        
-                    <Articulo key={articulo.id} />
+                        <Articulo key={articulo.id}
+                            title={articulo.titulo} />
                         
                     );
                 })}
