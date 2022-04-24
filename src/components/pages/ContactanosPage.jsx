@@ -1,4 +1,4 @@
-export function Contactanos(){
+export function ContactanosPage(){
 
     return (
     <>
@@ -28,7 +28,7 @@ export function Contactanos(){
                     <p><textarea name="consulta" id="" cols="80" rows="10"></textarea></p>
                 </div>
                 <br/>
-                <button className="button">Enviar</button>
+                <button type="submit" className="button">Enviar</button>
             </form>
 
             <div className="logo">
