@@ -1,6 +1,6 @@
 import { Proyecto } from "../common/Proyecto";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { Clientes } from "../common/Clientes";
+import '../../assets/css/homepage.css'
 
 export function HomePage(){
     
@@ -16,69 +16,18 @@ export function HomePage(){
                 <h2 className="titulo">Proyectos</h2>
                
                 <div className="galeria-port">
+                    <Proyecto/>
+                </div>
+            </div>
+        </section>
 
-                    <div className="imagen-port">
-                        <img src="assets/img/proyectos1.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Azul</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyectos2.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Rojo</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyectos3.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Naranja</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyectos4.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Verde</p>
-                        </div>
-                    </div>
-                    <div className="imagen-port">
-                        <img src="assets/img/proyecto5.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Celeste</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyecto6.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Blanco</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyecto7.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Amarillo</p>
-                        </div>
-                    </div>
-
-                    <div className="imagen-port">
-                        <img src="assets/img/proyecto8.jpg" alt=""/>
-                        <div className="hover-galeria">
-                            <img src="assets/img/LOGO Sophie sin fondo.png" alt=""/>
-                            <p>Proyecto Negro</p>
-                        </div>
-                    </div>
+        <section>
+            
+            <div className="contenedor-clientes">
+                
+                <div className="clientes">
+                    <Clientes/>
+                 
                 </div>
             </div>
         </section>

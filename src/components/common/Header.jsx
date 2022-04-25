@@ -5,9 +5,9 @@ export function Header(){
         <header style={{
                 background: "hsla(177, 94%, 38%, 0.699)",
                 /* fallback for old browsers */
-                background: "-webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(/public/assets/img/fondoheader.jpg))",
+                background: "-webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(assets/img/fondoheader.jpg)",
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: "linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(/public/assets/img/fondoheader.jpg)",
+                background: "linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(assets/img/fondoheader.jpg)",
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed",
@@ -17,8 +17,8 @@ export function Header(){
             <nav>
                 <a href="../HomePage">Home</a>
                 <a href="../Quienessomos">Quienes somos</a>
-                <a href="#">Proyectos</a>
                 <a href="../Contactanos">Contactanos</a>
+                <a href="#">Login</a>
             </nav>
 
                 <section className="titulos-header" url="./ProyectoSenpai.html">

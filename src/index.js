@@ -4,6 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//VERSION PARA ERROR DE REACT: "ReactDOM.render is no longer supported in React 18. Use createRoot instead..."
+/*const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);*/
+
+
+//VERSION NORMAL USADA DURANTE CURSO
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

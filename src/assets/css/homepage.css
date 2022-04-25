@@ -1,0 +1,377 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*Estilo del Header*/
+header {
+    width: 100vw;
+    height: 52vh;
+    background: hsla(177, 94%, 38%, 0.699);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 48%, 52%, 0.658), hsla(177, 94%, 38%, 0.712)), url(../img/fondoheader.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ab2bfa8, hsla(177, 90%, 34%, 0.678)), url(../img/fondoheader.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header nav {
+    text-align: right;
+    padding: 4vh 5vw 0 0;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 4vh;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.titulos-header {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 100vw;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 20vw;
+}
+
+.titulos-header h1 {
+    font-size: 3.75rem;
+    color: white;
+    box-shadow: 3px solid black;
+}
+
+.titulos-header h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    box-shadow: 3px solid black;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+/*Estilo del Main*/
+
+.portafolio {
+    background: #cfdee7;
+}
+
+.portafolio .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+main section .titulo {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    }
+
+.portafolio .contenedor .titulo {
+    margin-bottom: 5vh;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    height: 50vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #73a4b0a4;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 80%;
+    height: 80%;
+}
+
+.hover-galeria p {
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*Estilo de la seccion - que dicen nuestros clientes -*/
+
+.contenedor-clientes {
+    background: #cfdee7;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+}
+
+.clientes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-clientes h2 {
+    background: rgb(116, 165, 177);
+    padding: 5vh 0 5vh 0;
+    width: 97.5%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+.clientes .un-cliente {
+    background: rgb(116, 165, 177);
+    display: flex;
+    width: 32.5%;
+    height: 12.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.clientes .un-cliente img {
+    width: 10vw;
+    height: 20vh;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.clientes .un-cliente .texto-cliente {
+    width: 60%;
+    color: white;
+}
+
+.clientes .un-cliente .texto-cliente p {
+    font-weight: 300;
+    padding-top: 2.5vh;
+}
+
+/*Estilo del Footer*/
+
+footer {
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin-top: 5vh;
+}
+
+.footer .sofia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh 0px;
+}
+
+.footer .Copywright {
+    text-align: center;
+    padding-top: 3vh;
+    border-top: 2px solid rgb(116, 165, 177);
+}
+
+/*Media Queries para dispositivos de mas de 1600px de pantalla*/
+/* Cambiando la fuente del html para acomodar las medidas rem */
+@media (min-width:1600px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/*Media Queries para dispositivos moviles*/
+@media only screen and (min-device-width : 440px) and (max-device-width : 991px) {
+
+    /*media querie para Header*/
+
+    body header {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-content: center;
+        justify-content: space-evenly;
+
+    }
+
+    header nav {
+        text-align: center;
+        padding: 0;
+    }
+
+    header .titulos-header {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    header .titulos-header h2 {
+        padding: 0;
+        align-items: center;
+        min-width: 440px;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    /*media querie para el main - seccion proyectos*/
+    .galeria-port {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imagen-port {
+        width: 45%;
+    }
+
+
+    /*media querie para el main - seccion clientes*/
+
+    .clientes {
+        /* align-content: center;
+        align-items: center; */
+        flex-wrap: wrap;
+    }
+
+    .clientes .un-cliente {
+        width: 90%;
+        margin: 1vh 0 1vh 0;
+    }
+
+    .clientes .un-cliente img {
+        width: 20vw;
+    }
+
+    /*Media querie para el footer*/
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+/*Media Queries para dispositivos moviles*/
+
+@media (max-width:439px) {
+
+    /*media querie para Header*/
+
+    body header {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-content: center;
+        justify-content: space-evenly;
+        height: 40vh;
+    }
+
+    header nav {
+        text-align: center;
+        padding: 0;
+    }
+
+    header .titulos-header {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    header .titulos-header h2 {
+        display: none;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    /*media querie para el main - seccion proyectos*/
+    .galeria-port {
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imagen-port {
+        width: 90%;
+    }
+
+    /*media querie para el main - seccion clientes*/
+
+    .clientes {
+        /* align-content: center;
+    align-items: center; */
+        flex-wrap: wrap;
+    }
+
+    .clientes .un-cliente {
+        width: 90%;
+        margin: 1vh 0 1vh 0;
+    }
+
+    .clientes .un-cliente img {
+        width: 20vw;
+    }
+
+    /*Media querie para el footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
