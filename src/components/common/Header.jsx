@@ -18,7 +18,7 @@ export function Header(){
                 <a href="../HomePage">Home</a>
                 <a href="../Quienessomos">Quienes somos</a>
                 <a href="../Contactanos">Contactanos</a>
-                <a href="#">Login</a>
+                <a href="../Login">Login</a>
             </nav>
 
                 <section className="titulos-header" url="./ProyectoSenpai.html">

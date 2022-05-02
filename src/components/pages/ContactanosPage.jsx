@@ -16,8 +16,8 @@ export function ContactanosPage(){
         //Seteo estado de Loading a TRUE
         setLoading(true);
 
-        //llamo al API
-        api.post('/ContactanosPage', {
+        //llamo a lA API
+        api.post('/contactanospage', {
             nombre: nombre,
             email: email,
             consulta: consulta,

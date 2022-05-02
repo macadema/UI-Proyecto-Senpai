@@ -7,6 +7,6 @@ import { useEffect, useState } from "react";
         return (
             <>
                 <h2 className="articulo contenido h2">{props.title}</h2>
-                <p>{props.contenido}</p>
+                <p>{props.content}</p>
             </>
         )}

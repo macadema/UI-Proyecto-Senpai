@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../../assets/css/login.css';
 import { api } from "../../server/api";
 
 export function LoginPage(){
@@ -36,6 +37,9 @@ export function LoginPage(){
 
         //Cambiar el estado loading a false
         setLoading(false);
+
+        //INDICAR ERROR
+        setError("Usuario o contrasena incorrectos")
       }
     );
     };
@@ -50,50 +54,25 @@ export function LoginPage(){
     };
 
     return (
-        <div className="row d-flex justify-content-center">
-        <div className="col-8">
-            <div className="card" style={{ width: "100%" }}>
-            <div className="card-body">
-                <h5 className="card-title">Login</h5>
-                <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="contact-email">Email</label>
-                    <input
-                    value={email}
-                    onChange={handleEmailChange}
-                    type="email"
-                    name="correo"
-                    className="form-control"
-                    id="contact-email"
-                    placeholder="Ingrese un correo"
-                    required
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="contact-password">Clave</label>
-                    <input
-                    value={password}
-                    onChange={handlePasswordChange}
-                    type="password"
-                    name="password"
-                    className="form-control"
-                    id="contact-password"
-                    placeholder="Ingrese una clave"
-                    required
-                    />
-                </div>
 
-                <button type="submit" className="btn btn-primary mb-2 mt-4">
-                    {loading ? "Cargando..." : "Login"}
-                </button>
-
-                <span className="text-danger d-block">{error}</span>
-                </form>
+        <form id="formulario" action="" onSubmit={handleSubmit}>
+           
+                        <div className="campo-formulario">
+                <label className="obligatorio" for="email">E-mail:</label><br/>
+                <input value={email} onChange={handleEmailChange} type="email" size="80"/>
             </div>
+            <br/>
+            <div className="campo-formulario">
+                <label className="obligatorio" for="Password">Password:</label><br/>
+                <input value={password} onChange={handlePasswordChange} type="password" size="80" />
             </div>
-        </div>
-        </div>
+            <br/>
             
+            <button type="submit" className="button" > {loading ? "Logging in..." : "Login"} </button>
+
+            <span> {error} </span>
+        </form>
+      
         )
 
 };

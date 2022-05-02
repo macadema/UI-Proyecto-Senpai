@@ -1,6 +1,8 @@
+import axios from "axios"
 import { InfoEmpresa } from "../common/InfoEmpresa";
-
+import { useEffect, useState } from "react";
 import '../../assets/css/quienessomos.css'
+
 
 
 export function QuienessomosPage(){
@@ -9,7 +11,7 @@ export function QuienessomosPage(){
 
     //Traigo info de api.json
     useEffect(()=>{
-        axios.get("http://localhost:3000/Articulos").then((response) => {
+        axios.get("/quienessomospage").then((response) => {
             setArticulos(response.data);
     });
 
@@ -19,13 +21,13 @@ export function QuienessomosPage(){
     <>
         <article className="articulo">
             <div className="articulo contenido">
-                {articulos.map(function (articulo) {
+                {articulos.map((articuloJSON, index)=> {
                     return (
-                        <InfoEmpresa key={articulo.id}
-                            title={articulo.titulo}
-                            content={articulo.contenido}/>
+                        <InfoEmpresa key={index}
+                            title={articuloJSON.titulo}
+                            content={articuloJSON.contenido}/>
                     );
-                })}
+                })};
             </div>
 
         </article>

@@ -6,6 +6,7 @@ import { ContactanosPage } from './components/pages/ContactanosPage';
 import { QuienessomosPage } from './components/pages/QuienessomosPage';
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
+import {LoginPage} from './components/pages/LoginPage';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="HomePage" element={<HomePage />} />
-        <Route path="Contactanos" element={<ContactanosPage />} />
-        <Route path="QuienesSomos" element={<QuienessomosPage />} />
+        <Route path="/homepage" element={<HomePage />} />
+        <Route path="/contactanos" element={<ContactanosPage />} />
+        <Route path="/quienessomos" element={<QuienessomosPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer/>
     </>
