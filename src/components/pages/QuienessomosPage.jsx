@@ -21,9 +21,9 @@ export function QuienessomosPage(){
     <>
         <article className="articulo">
             <div className="articulo contenido">
-                {articulos.map((articuloJSON, index)=> {
+                {articulos.map((articuloJSON, id)=> {
                     return (
-                        <InfoEmpresa key={index}
+                        <InfoEmpresa key={id}
                             title={articuloJSON.titulo}
                             content={articuloJSON.contenido}/>
                     );
